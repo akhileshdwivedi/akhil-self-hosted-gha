@@ -1,0 +1,13 @@
+name: Self hosted codebuild runner
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+jobs:
+  DeployJob:
+    runs-on: codebuild-akhil-codebuild-self-hosted-runner-{{ github.run_id }}-{{ github.run_attempt }}
+    steps:
+      - name: A good step
+        run: echo 'Yep'
