@@ -7,7 +7,7 @@ on:
 
 jobs:
   DeployJob:
-    runs-on: codebuild-akhil-codebuild-self-hosted-runner-{{ github.run_id }}-{{ github.run_attempt }}
+    runs-on: codebuild-akhil-codebuild-self-hosted-runner-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - name: A good step
         run: echo 'Yep'
