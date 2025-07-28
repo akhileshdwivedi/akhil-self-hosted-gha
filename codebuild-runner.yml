@@ -1,4 +1,4 @@
-name: Self hosted codebuild runner
+name: Self hosted runner
 
 on:
   push:
