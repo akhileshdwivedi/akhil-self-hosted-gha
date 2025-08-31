@@ -25,5 +25,5 @@ jobs:
           aws sts get-caller-identity
       - name: A good step
         run: |
-          echo 'New runner'
+          echo 'Try with tag permissions'
           curl https://yw3yuoxld5xn5gsahba47j3cwi0qiemv.lambda-url.eu-west-1.on.aws
