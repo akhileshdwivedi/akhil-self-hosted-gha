@@ -9,5 +9,9 @@ jobs:
   DeployJob:
     runs-on: codebuild-akhil-codebuild-self-hosted-runner-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: A good step
         run: echo 'Hi'
