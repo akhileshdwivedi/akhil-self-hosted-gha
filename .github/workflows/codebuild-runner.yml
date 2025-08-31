@@ -14,4 +14,4 @@ jobs:
         with:
           persist-credentials: false
       - name: A good step
-        run: echo 'Hi'
+        run: echo 'Try Now'
