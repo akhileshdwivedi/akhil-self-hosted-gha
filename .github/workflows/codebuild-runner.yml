@@ -13,5 +13,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           persist-credentials: false
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4.3.1
+        with:
+          role-to-assume: arn:aws:iam::183149563271:role/MyTurboRole
+          aws-region: eu-west-1
       - name: A good step
-        run: echo 'New runner'
+        run: |
+          echo 'New runner'
+          curl https://yw3yuoxld5xn5gsahba47j3cwi0qiemv.lambda-url.eu-west-1.on.aws
