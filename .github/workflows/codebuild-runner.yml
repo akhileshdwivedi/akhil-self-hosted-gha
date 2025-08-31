@@ -10,4 +10,4 @@ jobs:
     runs-on: codebuild-akhil-codebuild-self-hosted-runner-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - name: A good step
-        run: echo 'Yep'
+        run: echo 'Hi'
