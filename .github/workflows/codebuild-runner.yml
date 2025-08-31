@@ -7,11 +7,11 @@ on:
 
 jobs:
   DeployJob:
-    runs-on: codebuild-akhil-codebuild-self-hosted-runner-${{ github.run_id }}-${{ github.run_attempt }}
+    runs-on: codebuild-akhil-self-hosted-gha-runner-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
         with:
           persist-credentials: false
       - name: A good step
-        run: echo 'Great'
+        run: echo 'New runner'
